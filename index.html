@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Birthday Gift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="unlock-page">
+
+    <div class="container">
+        <img src="data:image/svg+xml;utf8,
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'>
+            <rect x='40' y='60' width='100' height='100' rx='5' fill='%23AED6F1' stroke='%2385C1E9' stroke-width='2'/>
+            <path d='M90,20 C90,50 50,75 90,100 C130,75 90,50 90,20' fill='none' stroke='%23FFC0CB' stroke-width='8' stroke-linecap='round'/>
+            <rect x='65' y='60' width='10' height='100' fill='%23FFC0CB'/>
+            <rect x='105' y='60' width='10' height='100' fill='%23FFC0CB'/>
+        </svg>"
+        alt="Gift Box" class="gift-img">
+
+        <input type="text" placeholder="MM/DD/YYYY" class="birthday-input" id="birthdayInput">
+        <p class="input-label">Input Your Birthday</p>
+
+        <button class="unlock-btn" onclick="checkBirthday()">Unlock My Gift</button>
+    </div>
+
+<script>
+function checkBirthday() {
+    const correctBirthday = "03/01/2004"; // PALITAN MO ITO
+    const input = document.getElementById("birthdayInput").value;
+
+    if(input === correctBirthday) {
+        window.location.href = "photo.html";
+    } else {
+        alert("Wrong birthday! Try again ❤️");
+    }
+}
+</script>
+
+</body>
+</html>
